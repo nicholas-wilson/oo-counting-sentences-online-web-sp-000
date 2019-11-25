@@ -30,10 +30,15 @@ class String
     words = this.split(" ")
     sentences = []
     sentence = ""
-    counter = 0
 
     words.each do |word|
       if (sentence?(word) || question?(word) || exclamation?(word))
-
+        sentence << word
+        sentences << sentence
+      else
+        sentence << word
+      end
+    end
+    sentences.length
   end
 end
