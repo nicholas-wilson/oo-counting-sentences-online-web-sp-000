@@ -2,32 +2,32 @@ require 'pry'
 
 class String
 
-  def sentence?(string)
-    if string.end_with?(".")
+  def sentence?
+    if self.end_with?(".")
       return true
     else
       return false
     end
   end
 
-  def question?(string)
-    if string.end_with?("?")
+  def question?
+    if self.end_with?("?")
       return true
     else
       return false
     end
   end
 
-  def exclamation?(string)
-    if string.end_with?("!")
+  def exclamation?
+    if self.end_with?("!")
       return true
     else
       return false
     end
   end
 
-  def count_sentences(string)
-    words = string.split(" ")
+  def count_sentences
+    words = self.split(" ")
     sentences = []
     sentence = ""
 
