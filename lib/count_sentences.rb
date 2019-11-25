@@ -32,12 +32,9 @@ class String
     sentence = ""
 
     words.each do |word|
-      if (sentence? || question? || exclamation?)
+      if (word.sentence? || word.question? || word.exclamation?)
         sentence << word
-        puts sentence
-        puts sentences
         sentences << sentence
-        sentence = "DOG BUTT"
       else
         sentence << word
       end
