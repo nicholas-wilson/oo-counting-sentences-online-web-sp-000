@@ -37,7 +37,7 @@ class String
         puts sentence
         puts sentences
         sentences << sentence
-        sentence = ""
+        sentence = "DOG BUTT"
       else
         sentence << word
       end
