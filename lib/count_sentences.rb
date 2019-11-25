@@ -34,6 +34,8 @@ class String
     words.each do |word|
       if (sentence? || question? || exclamation?)
         sentence << word
+        puts sentence
+        puts sentences
         sentences << sentence
         sentence = ""
       else
