@@ -27,6 +27,13 @@ class String
   end
 
   def count_sentences
+    words = this.split(" ")
+    sentences = []
+    sentence = ""
+    counter = 0
+
+    words.each do |word|
+      if (sentence?(word) || question?(word) || exclamation?(word))
 
   end
 end
