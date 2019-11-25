@@ -3,7 +3,7 @@ require 'pry'
 class String
 
   def sentence?
-    if this.end_with?(".")
+    if self.end_with?(".")
       return true
     else
       return false
@@ -11,7 +11,7 @@ class String
   end
 
   def question?
-    if this.end_with?("?")
+    if self.end_with?("?")
       return true
     else
       return false
@@ -19,7 +19,7 @@ class String
   end
 
   def exclamation?
-    if this.end_with?("!")
+    if self.end_with?("!")
       return true
     else
       return false
@@ -27,7 +27,7 @@ class String
   end
 
   def count_sentences
-    words = this.split(" ")
+    words = self.split(" ")
     sentences = []
     sentence = ""
 
