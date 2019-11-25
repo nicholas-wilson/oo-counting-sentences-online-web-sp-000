@@ -35,6 +35,7 @@ class String
       if (sentence? || question? || exclamation?)
         sentence << word
         sentences << sentence
+        sentence = ""
       else
         sentence << word
       end
